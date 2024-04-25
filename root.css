@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #1890ff;
+  --input-border-color: #d9d9d9;
+  --input-background: #f4f5f4;
+  --button-padding: 5px 16px;
+  --border-radius: 2px;
+  --border-size:1px;
+  --input-hover-color:#40a9ff;
+  --fourty-pixels:40px;
+  --three-pixels:3px;
+  }
+
+button{
+  
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  border: none;
+  width: 98px;
+  height: 32px;
+
+}
+.bgc\(lightblue\){
+  background-color: var(--primary-color);
+}
+.c\(white\){
+  color: white;
+
+}
+
+.p\(5px16px\){
+  padding: var(--button-padding);
+}
+
+.input {
+  width: 320px;
+  height: 30px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 2px;
+  outline: none;
+  transition:  0.3s ease;
+}
+
+
+.mt\(1rem\){
+  margin-top: 16px;
+}
+
+
+
+.p\(8px12px\){
+  padding: 8px 12px;
+}
+
+
+
+button{
+  
+  border: var(--border-size) solid var(--input-border-color); 
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: all 0.3s ease; 
+  
+}
+.mt\(1rem\){
+  margin-top: 16px;
+  
+}
+.input:focus {
+  
+    border-color: var(--primary-color); 
+    box-shadow: 0px 0px 6px 0px #1890FF80; 
+}
+
+.fz\(16px\){
+  
+  font-size: 18px;
+}
+
+.input-icon-left {
+  
+  background-image: url('User.png');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+}
+
+.pl\(34px\){
+  padding-left: 34px;
+}
+
+.input::placeholder {
+  color: #8C8C8C;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+.i\(bc\)\:h:hover {
+  border-color: var(--input-hover-color);
+}
+
+
+.pl\(40px\){
+  padding-left: var(--fourty-pixels);
+}
+
+
+.loader{
+  position: relative;
+  right: var(--fourty-pixels);
+  top: var(--three-pixels);
+  animation: an1 1s ease infinite;
+}
+
+span{
+  position: relative;
+  bottom: 15px;
+}
+
+@keyframes an1{
+  0%{
+    transform:rotate(0turn);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+
+}
+
+.searcher{
+  position: relative;
+  top: var(--three-pixels);
+  right: var(--fourty-pixels);
+}
+
+.post{
+  position: absolute;
+  top: 43px;
+  left: 33%;
+}
+
